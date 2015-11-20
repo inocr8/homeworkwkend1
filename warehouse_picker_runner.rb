@@ -3,11 +3,11 @@ require_relative './warehouse_picker_functions'
 ####  SECTION A - Single bay/item
 ### Given a bay, returns the item in that bay.
 found_item = item_at_bay('b', 5)
-puts "Item at b5 found is #{found_item}, expect it to be nail filer."
+puts "Item at b5 found is #{found_item}, expect it to be nail filer.\n\n"
 
 ### Given an item return the bay that it is in.
-# found_bay = location_of_bay()
-# puts "The nail filer can be found at #{location_of_bay}, expect it to be b5."
+found_bay = location_of_bay('nail filer')
+puts "The nail filer can be found at #{found_bay}, expect it to be b5.\n\n"
 
 
 ####  SECTION B - Multiple bays/items

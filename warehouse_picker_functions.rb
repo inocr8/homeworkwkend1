@@ -187,9 +187,10 @@ def item_at_bay(row, bay)
 end
 
 
-# def location_of_bay
-
-# end
+def location_of_bay(item)
+  location = WAREHOUSE.select{ |x| x[:product_name] == item }
+  return location[0][:rack_bay_position]
+end
 
 
 
